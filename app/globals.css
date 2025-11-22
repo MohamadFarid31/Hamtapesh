@@ -145,3 +145,13 @@ body {
 .text-5xl-c {
   font-size: var(--fs-5xl);
 }
+
+.health-section-gradient {
+  background: linear-gradient(180deg, #ffebf1 0%, #ffffff 100%);
+}
+
+@media (min-width: 1024px) {
+  .health-section-gradient {
+    background: linear-gradient(270deg, #ffebf1 0%, #ffffff 100%);
+  }
+}
