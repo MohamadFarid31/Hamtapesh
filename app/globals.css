@@ -1,55 +1,77 @@
 @import "tailwindcss";
 
 :root {
-  /* Base Colors */
   --background: #ffffff;
   --foreground: #000000;
-
   --primary-color: #c83067;
   --primary-white: #ffffff;
   --primary-black: #000000;
-
-  /* Grays */
   --gray-200: #e5e7eb;
   --gray-600: #424750;
-
-  /* Pastel Palette */
   --pink-light: #feeff4;
   --pink-pastel: #f77ca3;
   --pink-bg: #ffe0ec;
-
   --purple-light: #efd8f5;
   --purple-shadow: #f3c3fc;
-
   --blue-light: #c8efff;
   --blue-shadow: #a5d7ec;
-
   --green-light: #d4fade;
   --green-shadow: #a9eab8;
-
   --yellow-light: #fff1c6;
   --yellow-shadow: #ffd278;
-
   --mint-light: #e3f7dd;
   --sky-light: #e0f2ff;
-
-  /* Mobile Font Sizes */
-  --fs-xs: 11px;
-  --fs-sm: 13px;
-  --fs-base: 16px;
-  --fs-lg: 19px;
-  --fs-xl: 22px;
-  --fs-2xl: 26px;
-  --fs-3xl: 30px;
-  --fs-4xl: 40px;
-  --fs-5xl: 48px;
+  --fs-xs: 9px;
+  --fs-sm: 11px;
+  --fs-base: 13px;
+  --fs-lg: 16px;
+  --fs-xl: 19px;
+  --fs-2xl: 22px;
+  --fs-3xl: 16px;
+  --fs-4xl: 28px;
+  --fs-5xl: 24px;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-primary: var(--primary-color);
+  --color-primary-white: var(--primary-white);
+  --color-primary-black: var(--primary-black);
+  --color-gray-200: var(--gray-200);
+  --color-gray-600: var(--gray-600);
+  --color-pink-light: var(--pink-light);
+  --color-pink-pastel: var(--pink-pastel);
+  --color-pink-bg: var(--pink-bg);
+  --color-purple-light: var(--purple-light);
+  --color-purple-shadow: var(--purple-shadow);
+  --color-blue-light: var(--blue-light);
+  --color-blue-shadow: var(--blue-shadow);
+  --color-green-light: var(--green-light);
+  --color-green-shadow: var(--green-shadow);
+  --color-yellow-light: var(--yellow-light);
+  --color-yellow-shadow: var(--yellow-shadow);
+  --color-mint-light: var(--mint-light);
+  --color-sky-light: var(--sky-light);
   --font-sans: var(--font-dana);
   --font-mono: var(--font-geist-mono);
+  --font-dana: var(--font-dana);
+  --font-size-xs-c: var(--fs-xs);
+  --font-size-sm-c: var(--fs-sm);
+  --font-size-base-c: var(--fs-base);
+  --font-size-lg-c: var(--fs-lg);
+  --font-size-xl-c: var(--fs-xl);
+  --font-size-2xl-c: var(--fs-2xl);
+  --font-size-3xl-c: var(--fs-3xl);
+  --font-size-4xl-c: var(--fs-4xl);
+  --font-size-5xl-c: var(--fs-5xl);
+  --shadow-primary-pink: 4px 12px 32px 0 rgba(177, 94, 114, 0.7);
+  --breakpoint-xs: 475px;
+  --breakpoint-sm: 640px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1280px;
+  --breakpoint-2xl: 1536px;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -60,27 +82,28 @@
 }
 
 body {
+  max-width: 2000px;
   background: var(--background);
   color: var(--foreground);
   font-family: var(--font-dana), Arial, Helvetica, sans-serif;
+  margin: 0 auto;
+  overflow-x: hidden;
 }
 
-/* Tablet */
 @media (min-width: 640px) {
   :root {
-    --fs-xs: 12px;
-    --fs-sm: 14px;
-    --fs-base: 18px;
-    --fs-lg: 21px;
-    --fs-xl: 25px;
-    --fs-2xl: 29px;
-    --fs-3xl: 33px;
-    --fs-4xl: 44px;
-    --fs-5xl: 52px;
+    --fs-xs: 10px;
+    --fs-sm: 12px;
+    --fs-base: 14px;
+    --fs-lg: 18px;
+    --fs-xl: 21px;
+    --fs-2xl: 25px;
+    --fs-3xl: 29px;
+    --fs-4xl: 40px;
+    --fs-5xl: 48px;
   }
 }
 
-/* Desktop */
 @media (min-width: 1024px) {
   :root {
     --fs-xs: 14px;
