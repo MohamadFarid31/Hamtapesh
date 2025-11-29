@@ -12,10 +12,13 @@
   --pink-pastel: #f77ca3;
   --pink-bg: #ffe0ec;
   --purple-light: #efd8f5;
+  --purple-main: #ca00ff;
   --purple-shadow: #f3c3fc;
   --blue-light: #c8efff;
+  --blue-main: #00b7ff;
   --blue-shadow: #a5d7ec;
   --green-light: #d4fade;
+  --green-main: #008c25;
   --green-shadow: #a9eab8;
   --yellow-light: #fff1c6;
   --yellow-shadow: #ffd278;
@@ -27,9 +30,9 @@
   --fs-lg: 16px;
   --fs-xl: 19px;
   --fs-2xl: 22px;
-  --fs-3xl: 16px;
+  --fs-3xl: 20px;
   --fs-4xl: 28px;
-  --fs-5xl: 24px;
+  --fs-5xl: 30px;
 }
 
 @theme inline {
@@ -43,12 +46,15 @@
   --color-pink-light: var(--pink-light);
   --color-pink-pastel: var(--pink-pastel);
   --color-pink-bg: var(--pink-bg);
+  --color-purple-main: var(--purple-main);
   --color-purple-light: var(--purple-light);
   --color-purple-shadow: var(--purple-shadow);
   --color-blue-light: var(--blue-light);
   --color-blue-shadow: var(--blue-shadow);
+  --color-blue-main: var(--blue-main);
   --color-green-light: var(--green-light);
   --color-green-shadow: var(--green-shadow);
+  --color-green-main: var(--green-main);
   --color-yellow-light: var(--yellow-light);
   --color-yellow-shadow: var(--yellow-shadow);
   --color-mint-light: var(--mint-light);
@@ -98,7 +104,7 @@ body {
     --fs-lg: 18px;
     --fs-xl: 21px;
     --fs-2xl: 25px;
-    --fs-3xl: 29px;
+    --fs-3xl: 26px;
     --fs-4xl: 40px;
     --fs-5xl: 48px;
   }
@@ -154,4 +160,30 @@ body {
   .health-section-gradient {
     background: linear-gradient(270deg, #ffebf1 0%, #ffffff 100%);
   }
+}
+
+.circle-bg::after {
+  content: "";
+  position: absolute;
+  top: -11%;
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  z-index: 0;
+  aspect-ratio: 1 / 1;
+}
+
+#elham .circle-bg::after {
+  left: -14%;
+  background-color: var(--color-blue-light);
+}
+
+#soheil .circle-bg::after {
+  left: 14%;
+  background-color: var(--color-purple-light);
+}
+
+#nadia .circle-bg::after {
+  left: 14%;
+  background-color: var(--color-green-light);
 }

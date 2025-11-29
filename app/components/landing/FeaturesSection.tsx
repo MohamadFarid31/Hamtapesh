@@ -197,10 +197,10 @@ const FeaturesSection: React.FC = () => {
         <div className="container mx-auto">
           <div className="grid grid-cols-2  grid-rows-1 gap-4">
             {/* Right Column: Nutrition, Supplements, Weight */}
-            <div className="space-y-4 md:space-y-6 grid grid-rows-3 gap-4">
+            <div className="space-y-4 md:space-y-6 grid grid-rows-3 gap-1">
               {/* Nutrition */}
               <div
-                className={`${features[0].bgColor}  rounded-2xl p-6 flex items-center justify-between flex-col gap-4 overflow-hidden m-0 `}
+                className={`${features[0].bgColor}  rounded-2xl p-6 flex items-center justify-between flex-col  overflow-hidden m-0 `}
               >
                 <div className="relative shrink-0">
                   <div className="absolute w-25 h-25 m-auto inset-0 rounded-full shadow-[-9px_-6px_18px_32px_var(--purple-shadow)] bg-purple-shadow opacity-50 pointer-events-none"></div>
@@ -252,7 +252,7 @@ const FeaturesSection: React.FC = () => {
 
               {/* Weight */}
               <div
-                className={`${features[3].bgColor} rounded-2xl p-6 flex items-center justify-between flex-col gap-4 overflow-hidden m-0 `}
+                className={`${features[3].bgColor} rounded-2xl p-6 flex items-center justify-between flex-col gap-1 overflow-hidden m-0 `}
               >
                 <div className="relative shrink-0">
                   <div className="absolute inset-0 w-[25%] h-[25%] m-auto bg-blue-shadow rounded-full shadow-[0_3px_20px_42px_var(--blue-shadow)] pointer-events-none"></div>
