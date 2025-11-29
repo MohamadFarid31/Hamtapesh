@@ -11,28 +11,28 @@ const HeroSection: React.FC = () => {
           <div className="relative bg-primary text-white rounded-[400px] shadow-primary-pink mx-3 min-h-[400px] flex items-center justify-between  ">
             <div className="max-w-[50%] text-center   mr-15 relative z-20">
               <h1 className="font-bold leading-[1.2] mb-4 text-5xl-c">
-                هر روز بارداری مهمه!
-              </h1>
+              هر روز بارداری مهمه!
+            </h1>
               <p className="text-3xl-c leading-[1.6] opacity-95 mb-8">
-                هم‌تپش همراه روزانه تو، برای یک بارداری سالم...
-              </p>
-              <a
+              هم‌تپش همراه روزانه تو، برای یک بارداری سالم...
+            </p>
+            <a
                 className="inline-block"
-                href="#download-section"
-                aria-label="دانلود اپلیکیشن هم‌تپش"
-              >
+              href="#download-section"
+              aria-label="دانلود اپلیکیشن هم‌تپش"
+            >
                 <span className="font-bold leading-[1.2] text-primary text-lg-c rounded-[10px] px-6 py-3 bg-white transition-all duration-300 ease-in-out">
-                  دانلود هم‌تپش
+                دانلود هم‌تپش
                 </span>
-              </a>
-            </div>
+            </a>
+          </div>
             <div className="absolute top-1/2 left-10 -translate-y-1/2 z-10 max-w-[350px] w-[30%] min-w-[300px]">
-              <Image
+            <Image
                 id="hero-img-desktop"
                 src="/hero-phone.png"
-                alt="هم‌تپش اپلیکیشن"
+              alt="هم‌تپش اپلیکیشن"
                 width={350}
-                height={600}
+              height={600}
                 loading="eager"
                 quality={95}
                 priority
@@ -89,12 +89,12 @@ const HeroSection: React.FC = () => {
                 unoptimized
                 loading="eager"
                 className="relative z-10 w-full h-auto"
-              />
-            </div>
+            />
+          </div>
           </div>
         </div>
-      </div>
-    </section>
+        </div>
+      </section>
   );
 };
 export default HeroSection;
