@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import localFont from "next/font/local";
+import Footer from "./components/layout/Footer";
 
 const danaFont = localFont({
   src: [
@@ -71,7 +72,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="fa" dir="rtl" className={danaFont.variable}>
+      {/* <header></header> */}
       <body className={danaFont.className}>{children}</body>
+      <Footer />
     </html>
   );
 }
