@@ -86,15 +86,15 @@ const HealthSection: React.FC = () => {
           <div className="space-y-8">
             {/* Text Section - Top */}
             <div className="text-center space-y-4">
-              <h2 className="text-2xl md:text-3xl font-bold text-primary leading-tight">
-          سلامت مادر، رشد سالم جنین
+              <h2 className="text-4xl-c font-bold text-primary leading-tight">
+                سلامت مادر، رشد سالم جنین
               </h2>
               <p className="text-base text-gray-600 leading-relaxed max-w-2xl mx-auto">
-          هم‌تپش در راستای ارتقاء سلامت بارداری و ایفای مسئولیت اجتماعی،
+                هم‌تپش در راستای ارتقاء سلامت بارداری و ایفای مسئولیت اجتماعی،
                 اپلیکیشن خود را به صورت رایگان در اختیار جامعه مادران باردار
                 قرار داده است.
-        </p>
-      </div>
+              </p>
+            </div>
 
             {/* Stats Circles - Same positioning as desktop */}
             <div className="relative shrink-0 w-full max-w-[500px] h-[500px] mx-auto">
@@ -107,8 +107,8 @@ const HealthSection: React.FC = () => {
                 </span>
                 <p className="text-sm text-gray-700 leading-tight">
                   {stats[0].text}
-          </p>
-        </div>
+                </p>
+              </div>
 
               {/* Circle 2 (70% - Blue) - Bottom Right, smaller, shifted left */}
               <div
@@ -119,8 +119,8 @@ const HealthSection: React.FC = () => {
                 </span>
                 <p className="text-xs text-gray-700 leading-tight">
                   {stats[1].text}
-          </p>
-        </div>
+                </p>
+              </div>
 
               {/* Circle 3 (32% - Green) - Left Center, same size as Circle 1 */}
               <div
@@ -144,7 +144,7 @@ const HealthSection: React.FC = () => {
           <div className="space-y-6">
             {/* Text Section */}
             <div className="text-center space-y-3">
-              <h2 className="text-xl font-bold text-primary leading-tight">
+              <h2 className="text-4xl-c font-bold text-primary leading-tight">
                 سلامت مادر، رشد سالم جنین
               </h2>
               <p className="text-sm text-gray-600 leading-relaxed">

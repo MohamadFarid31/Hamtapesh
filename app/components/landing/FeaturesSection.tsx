@@ -46,7 +46,7 @@ const FeaturesSection: React.FC = () => {
   return (
     <section id="app-features" className="py-8 md:py-16 px-4 md:px-8 mx-auto">
       {/* Title */}
-      <h2 className="text-center text-2xl md:text-4xl font-bold mb-8 md:mb-12">
+      <h2 className="text-center text-4xl   font-bold mb-8 md:mb-12">
         <span className="text-primary">هم‌تپش</span> چطور هر روز همراهته؟
       </h2>
 
@@ -97,16 +97,16 @@ const FeaturesSection: React.FC = () => {
                   unoptimized
                   className="relative z-10 w-full h-auto"
                 />
-          </div>
+              </div>
               <div className=" text-right self-start ">
                 <h3 className="text-xl-c font-bold mb-2 ">
                   {features[1].title}
                 </h3>
                 <p className="text-lg-c  leading-loose">
                   {features[1].description}
-            </p>
-          </div>
-        </div>
+                </p>
+              </div>
+            </div>
 
             {/* Fitness - col 1, row 2-3 */}
             <div
@@ -123,17 +123,17 @@ const FeaturesSection: React.FC = () => {
                   loading="eager"
                   unoptimized
                   className="relative z-10 w-full h-auto"
-            />
-          </div>
+                />
+              </div>
               <div className=" text-right self-start ">
                 <h3 className="text-xl-c font-bold mb-2">
                   {features[4].title}
                 </h3>
                 <p className="text-lg-c  leading-loose">
                   {features[4].description}
-            </p>
-          </div>
-        </div>
+                </p>
+              </div>
+            </div>
 
             {/* Supplements - col 2, row 2 */}
             <div
@@ -150,17 +150,17 @@ const FeaturesSection: React.FC = () => {
                   loading="eager"
                   unoptimized
                   className="relative xl:w-50 md:w-40 z-10 m-auto  h-auto drop-shadow-[0_21px_14px_var(--yellow-shadow)] mb-6"
-              />
-            </div>
+                />
+              </div>
               <div className=" text-right self-start z-10">
                 <h3 className="text-xl-c font-bold mb-2">
                   {features[2].title}
                 </h3>
                 <p className="text-lg-c  leading-loose">
                   {features[2].description}
-            </p>
-          </div>
-        </div>
+                </p>
+              </div>
+            </div>
 
             {/* Weight - col 2-3, row 3 */}
             <div
@@ -213,15 +213,15 @@ const FeaturesSection: React.FC = () => {
                     loading="eager"
                     unoptimized
                     className="relative z-10 w-full h-auto"
-                />
-              </div>
+                  />
+                </div>
                 <div className=" text-right self-start z-10">
                   <h3 className="text-xl font-bold mb-2">
                     {features[0].title}
                   </h3>
                   <p className="text-sm">{features[0].description}</p>
-            </div>
-          </div>
+                </div>
+              </div>
 
               {/* Supplements */}
               <div
@@ -246,9 +246,9 @@ const FeaturesSection: React.FC = () => {
                   </h3>
                   <p className="text-lg-c  leading-loose">
                     {features[2].description}
-            </p>
-          </div>
-        </div>
+                  </p>
+                </div>
+              </div>
 
               {/* Weight */}
               <div
@@ -274,9 +274,9 @@ const FeaturesSection: React.FC = () => {
                   <p className="text-lg-c  leading-loose">
                     {features[3].description}
                   </p>
+                </div>
               </div>
             </div>
-          </div>
 
             {/* Left Column: Chat, Fitness */}
             <div className="space-y-4 md:space-y-6 grid grid-rows-2 gap-4 ">
